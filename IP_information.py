@@ -6,10 +6,7 @@ hostname = input("Please enter website address:\n")
 #def get_ip():
     #response = requests.get('https://api64.ipify.org?format=json').json()
     #return response["ip"]
-    #response = {"IP": "103.102.220.5"}
-    #json_object = json.loads(json_data)
-    #json_formatted_str = json.dumps(json_object, indent=2)
-    #return response
+    
 def get_location():
     ip_address = socket.gethostbyname(hostname)
     response = requests.get(f'https://ipapi.co/{ip_address}/json/').json()
